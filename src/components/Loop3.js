@@ -13,12 +13,10 @@ const Loop3 = () => {
                 <tbody>
                     { seasons.length > 0                                // seasons 배열의 갯수가 0개 이상일때 
                     ? (seasons.map((v, i) => {
-                            return (
                                 <tr key={i}>
                                     <th>{i}</th>
                                     <td>{v}</td>
                                 </tr>
-                            )
                         }))
                         :  (
                             <tr>
@@ -34,7 +32,7 @@ const Loop3 = () => {
             ))}
 
             {seasons.map((v, i) => {
-                return <p key={i}>{v}</p>       // 화살표 함수를 {} 로 하면 return을 무조건 써야됨
+                return <p key={i}>{v}</p>       // 화살표 함수를 {} 로 하면 return을 써야됨
             })}
         </>
     )
